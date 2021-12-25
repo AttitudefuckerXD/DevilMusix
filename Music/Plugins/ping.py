@@ -30,9 +30,9 @@ async def ping(_, message):
     uptime = await bot_sys_stats()
     start = datetime.now()
     response = await message.reply_photo(
-        photo="cache/queryc.jpg",
+        photo="https://telegra.ph/file/e99872d72c45a2c3f3378.jpg",
         caption=">> Pong!"
     )
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await response.edit_text(f"**Pong!**\n`⚡{resp} ms`\n\n<b><u>📜 Prime Music System Stats:</u></b>{uptime}")
+    await response.edit_text(f"**Pong!**\n`⚡{resp} ms`\n\n<b><u>📜 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ Music System Stats:</u></b>{uptime}")
